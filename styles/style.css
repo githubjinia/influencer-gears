@@ -1,0 +1,122 @@
+/* body styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 5%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flexible-container{
+    display: flex;
+
+}
+.half-width{
+    width: 50%;
+    
+}
+h1{
+    font-size: 52px;
+}
+h2{
+    margin-top: 0;
+    font-size: 24px;
+}
+.link-button{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.button{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 41px;
+    width: 160px;
+}
+.transition:hover{
+    transform: scale(1.2);
+}
+.blogs-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-top: 200px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+}
+.blog{
+    background: #FFFFFF;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+padding-left: 35px;
+padding-top: 20px;
+padding-bottom: 10px;
+margin-bottom: 20px;
+}
+.blog-banner img{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+.size{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+}
+.price{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0
+}
+.fa-star.filled{
+    color: #FB8200;
+}
+.more{
+    display: flex;
+    justify-content: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+}
+.another-button{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    width: 160px;
+    height: 35px;
+    padding-left: 30px;
+    padding-top: 7px;
+}
+.copy{
+    display: flex;
+    
+}
+footer{
+    background-color: navy;
+    text-align: center;
+    color: white;
+}
+/* media queries */
+
+/* mobile devices */
+
+@media only screen and(max-width="688px") {
+    .flexible-container{
+        width: 100%;
+    }
+    .flexible-container .blogs .half-width{
+        grid-template-columns: repeat(1,1fr);
+   }
+   .blog{
+    flex-direction: column;
+   }
+
+
+    
+}
